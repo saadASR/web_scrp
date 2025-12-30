@@ -1,6 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const logger = require('../utils/logger');
+// minimal: use console for logging to keep dependencies small
 
 /**
  * Service de scraping web
@@ -78,7 +78,7 @@ const scrapingService = {
                 throw new Error('Connexion refusée par le serveur');
             }
             
-            logger.error('Erreur de scraping:', error.message);
+            console.error('Erreur de scraping:', error && error.message ? error.message : error);
             throw error;
         }
     },

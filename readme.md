@@ -70,23 +70,19 @@ http://localhost:3000
 
 ```
 project/
-├── server.js
+├── app.js
 ├── routes/
 │   └── scraper.js
 ├── controllers/
 │   └── scraperController.js
 ├── services/
 │   └── scrapingService.js
-├── utils/
-│   ├── validators.js
-│   └── logger.js
 ├── public/
 │   ├── index.html
 │   ├── css/
 │   │   └── style.css
 │   └── js/
 │       └── app.js
-├── logs/
 ├── package.json
 └── README.md
 ```
